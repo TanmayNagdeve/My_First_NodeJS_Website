@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Get your Gym Membership at 50$ - Limited Offer!</h1>
+        <!-- <p> -->
+            <!-- |#{status}   -->
+            <!-- Here the file content is being rendered as a pug template file, therefore in order to render html type of content in a pug format we have to make use of '|' (pipe operator)-->
+        <!-- </p> -->
+
+        <form action="/" id="contact" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="text" name="age" id="age" placeholder="Enter your Age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea type="address" name="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            <input type="number" name="phone" id="phone" placeholder="Enter your contact number">
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+        
+</body>
+</html> 
